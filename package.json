@@ -15,10 +15,10 @@
     "compare",
     "korean"
   ],
-  "homepage": "https://github.com/wnynya/datet#readme",
+  "homepage": "https://github.com/wnynya/Datet#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wnynya/datet.git"
+    "url": "https://github.com/wnynya/Datet.git"
   },
   "scripts": {
     "babel": "npx babel datet.mjs > datet.js"
