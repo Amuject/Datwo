@@ -1,4 +1,4 @@
-# fdate
+# datet
 
 Datetime format and compare
 
@@ -15,19 +15,19 @@ Datetime format and compare
 ## Installation
 
 ```
-npm i fdate
+npm i datet
 ```
 
 ## Usage
 
-fdate can override vanilla Date class
+datet can override vanilla Date class
 
 ### Format
 
 ESM
 
 ```js
-import Date from 'fdate';
+import Date from 'datet';
 
 console.log(new Date().format('YYYY-MM-DD hh:mm:ss'));
 console.log(new Date().format('YY-M-D N h:m:s.CC'));
@@ -37,7 +37,7 @@ console.log(new Date().format('YYYY / DDD / sssss / CCC'));
 CJS
 
 ```js
-const Date = require('fdate').default;
+const Date = require('datet').default;
 
 console.log(new Date().format('YYYY-MM-DD hh:mm:ss'));
 console.log(new Date().format('YY-M-D N h:m:s.CC'));

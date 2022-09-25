@@ -1,4 +1,4 @@
-import Date from '../fdate.mjs';
+import Date from '../datet.mjs';
 
 console.log(new Date().getTime());
 

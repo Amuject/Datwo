@@ -7,7 +7,7 @@
  * @author Wany <sung@wany.io>
  */
 
-class FDate extends Date {
+class DateT extends Date {
   format(format) {
     const T = this.getTime();
 
@@ -550,5 +550,5 @@ class FDate extends Date {
   }
 }
 
-export default FDate;
-export { FDate, FDate as Date };
+export default DateT;
+export { DateT, DateT as Date };

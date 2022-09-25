@@ -1,26 +1,27 @@
 {
-  "name": "fdate",
+  "name": "datet",
   "version": "1.0.0",
   "description": "Datetime format and compare",
   "author": "Wany <sung@wany.io> (https://wany.io)",
-  "main": "fdate.js",
+  "main": "datet.js",
   "exports": {
-    "require": "./fdate.js",
-    "import": "./fdate.mjs"
+    "require": "./datet.js",
+    "import": "./datet.mjs"
   },
   "keywords": [
     "date",
     "datetime",
     "format",
-    "compare"
+    "compare",
+    "korean"
   ],
-  "homepage": "https://github.com/wnynya/fdate#readme",
+  "homepage": "https://github.com/wnynya/datet#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wnynya/fdate.git"
+    "url": "https://github.com/wnynya/datet.git"
   },
   "scripts": {
-    "babel": "npx babel fdate.mjs > fdate.js"
+    "babel": "npx babel datet.mjs > datet.js"
   },
   "dependencies": {
     "geoip-lite": "1.4.2"
