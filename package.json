@@ -1,6 +1,6 @@
 {
   "name": "datet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Datetime format and compare",
   "author": "Wany <sung@wany.io> (https://wany.io)",
   "main": "datet.js",
