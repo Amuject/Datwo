@@ -1,0 +1,36 @@
+{
+  "name": "fdate",
+  "version": "1.0.0",
+  "description": "Datetime format and compare",
+  "author": "Wany <sung@wany.io> (https://wany.io)",
+  "main": "fdate.js",
+  "exports": {
+    "require": "./fdate.js",
+    "import": "./fdate.mjs"
+  },
+  "keywords": [
+    "date",
+    "datetime",
+    "format",
+    "compare"
+  ],
+  "homepage": "https://github.com/wnynya/fdate#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wnynya/fdate.git"
+  },
+  "scripts": {
+    "babel": "npx babel fdate.mjs > fdate.js"
+  },
+  "dependencies": {
+    "geoip-lite": "1.4.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "@babel/plugin-transform-runtime": "^7.18.2",
+    "@babel/preset-env": "^7.14.9",
+    "babel-preset-minify": "^0.5.2"
+  }
+}
