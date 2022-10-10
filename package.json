@@ -1,12 +1,12 @@
 {
   "name": "datwo",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Datetime format and compare",
   "author": "Wany <sung@wany.io> (https://wany.io)",
   "main": "datwo.js",
   "exports": {
     "require": "./datwo.js",
-    "import": "./datet.mjs"
+    "import": "./datwo.mjs"
   },
   "keywords": [
     "date",
