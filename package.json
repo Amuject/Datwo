@@ -1,11 +1,11 @@
 {
-  "name": "datet",
-  "version": "1.0.1",
+  "name": "datwo",
+  "version": "0.5.0",
   "description": "Datetime format and compare",
   "author": "Wany <sung@wany.io> (https://wany.io)",
-  "main": "datet.js",
+  "main": "datwo.js",
   "exports": {
-    "require": "./datet.js",
+    "require": "./datwo.js",
     "import": "./datet.mjs"
   },
   "keywords": [
@@ -15,23 +15,19 @@
     "compare",
     "korean"
   ],
-  "homepage": "https://github.com/wnynya/Datet#readme",
+  "homepage": "https://github.com/wnynya/Datwo#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wnynya/Datet.git"
+    "url": "https://github.com/wnynya/Datwo.git"
   },
   "scripts": {
-    "babel": "npx babel datet.mjs > datet.js"
-  },
-  "dependencies": {
-    "geoip-lite": "1.4.2"
+    "babel": "npx babel datwo.mjs > datwo.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.14.8",
     "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "@babel/plugin-transform-runtime": "^7.18.2",
-    "@babel/preset-env": "^7.14.9",
-    "babel-preset-minify": "^0.5.2"
+    "@babel/preset-env": "^7.14.9"
   }
 }

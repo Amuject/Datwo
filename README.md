@@ -1,6 +1,6 @@
-# Datet
+# Datwo
 
-Datetime format and compare
+Datwoime format and compare
 
 ## Table of Content
 
@@ -15,19 +15,19 @@ Datetime format and compare
 ## Installation
 
 ```
-npm i datet
+npm i datwo
 ```
 
 ## Usage
 
-datet can override vanilla Date class
+datwo can override vanilla Date class
 
 ### Format
 
 ESM
 
 ```js
-import Date from 'datet';
+import Date from 'datwo';
 
 console.log(new Date().format('YYYY-MM-DD hh:mm:ss'));
 console.log(new Date().format('YY-M-D N h:m:s.CC'));
@@ -37,7 +37,7 @@ console.log(new Date().format('YYYY / DDD / sssss / CCC'));
 CJS
 
 ```js
-const Date = require('datet').default;
+const Date = require('datwo').default;
 
 console.log(new Date().format('YYYY-MM-DD hh:mm:ss'));
 console.log(new Date().format('YY-M-D N h:m:s.CC'));
