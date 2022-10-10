@@ -1,6 +1,6 @@
 {
   "name": "datwo",
-  "version": "0.5.1",
+  "version": "0.7.0",
   "description": "Datetime format and compare",
   "author": "Wany <sung@wany.io> (https://wany.io)",
   "main": "datwo.js",

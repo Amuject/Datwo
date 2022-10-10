@@ -1,13 +1,4 @@
-/**
- * fdate
- *
- * (c) 2022 Wany
- *
- * @summary Date
- * @author Wany <sung@wany.io>
- */
-
-class DateT extends Date {
+class Datwo extends Date {
   format(format) {
     const T = this.getTime();
 
@@ -550,5 +541,5 @@ class DateT extends Date {
   }
 }
 
-export default DateT;
-export { DateT, DateT as Date };
+export default Datwo;
+export { Datwo, Datwo as Date };

@@ -3,9 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.DateT = exports.Date = void 0;
+exports.default = exports.Datwo = exports.Date = void 0;
 
-class DateT extends Date {
+class Datwo extends Date {
   format(format) {
     const T = this.getTime();
     const YYYY = this.getFullYear().toString();
@@ -678,7 +678,7 @@ class DateT extends Date {
 
 }
 
-exports.Date = exports.DateT = DateT;
-var _default = DateT;
+exports.Date = exports.Datwo = Datwo;
+var _default = Datwo;
 exports.default = _default;
 
