@@ -67,8 +67,8 @@ Format Characters
 | `D`     | 1-2 digit Day                   | 7             |
 | `hh`    | 2 digit Hour (0#)               | 08            |
 | `h`     | 1-2 digit Hour                  | 8             |
-| `hhm`   | 2 digit Hour (0#) (in 12 hours) | 08            |
-| `hm`    | 1-2 digit Hour (in 12 hours)    | 8             |
+| `hhhh`  | 2 digit Hour (0#) (in 12 hours) | 08            |
+| `hhh`   | 1-2 digit Hour (in 12 hours)    | 8             |
 | `mm`    | 2 digit Minute (0#)             | 03            |
 | `m`     | 1-2 digit Minute                | 3             |
 | `sssss` | 5 digit Second (in day)         | 04363         |
@@ -87,20 +87,10 @@ Format Characters
 ### Compare
 
 ```js
-console.log(
-  new Date('2022-01-02 00:00:00').compare(new Date('2021-12-29 00:05:00'))
-);
-console.log(
-  new Date('2022-01-02 00:00:00').compare(new Date('2022-01-01 00:10:00'))
-);
-console.log(
-  new Date('2022-01-02 00:00:00').compare(new Date('2022-01-01 24:53:00'))
-);
-console.log(
-  new Date('2022-01-02 00:00:00.000').compare(
-    new Date('2022-01-01 24:59:59.256')
-  )
-);
+console.log(new Date('2022-01-02 00:00:00').compare(new Date('2021-12-29 00:05:00')));
+console.log(new Date('2022-01-02 00:00:00').compare(new Date('2022-01-01 00:10:00')));
+console.log(new Date('2022-01-02 00:00:00').compare(new Date('2022-01-01 24:53:00')));
+console.log(new Date('2022-01-02 00:00:00.000').compare(new Date('2022-01-01 24:59:59.256')));
 ```
 
 <details><summary>Result</summary>
