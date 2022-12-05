@@ -14,10 +14,7 @@ class Datwo extends Date {
     const D = this.getDate();
     const DD = (D < 10 ? '0' : '') + D;
     const startday = new Date(YYYY + '-01-01');
-    const diff =
-      T -
-      startday.getTime() +
-      (startday.getTimezoneOffset() - this.getTimezoneOffset()) * 60 * 1000;
+    const diff = T - startday.getTime() + (startday.getTimezoneOffset() - this.getTimezoneOffset()) * 60 * 1000;
     const oneDay = 1000 * 60 * 60 * 24;
     let DDDa = Math.floor(diff / oneDay);
     DDDa = (DDDa < 10 ? '0' : '') + DDDa;
@@ -94,8 +91,8 @@ class Datwo extends Date {
     format = format.replace(/DDD/g, DDD); // 3자리 일 (연 중)
     format = format.replace(/DD/g, DD); // 2자리 일 (월 중, 0#)
     format = format.replace(/D/g, D); // 1자리 일 (월 중)
-    format = format.replace(/hhm/g, hhm); // 2자리 시 (일 중, 0#)
-    format = format.replace(/hm/g, hm); // 1자리 시 (일 중)
+    format = format.replace(/hhhh/g, hhm); // 2자리 시 (일 중, 0#)
+    format = format.replace(/hhh/g, hm); // 1자리 시 (일 중)
     format = format.replace(/hh/g, hh); // 2자리 시 (일 중, 0#)
     format = format.replace(/h/g, h); // 1자리 시 (일 중)
     format = format.replace(/mmmm/g, mmmm); // 4자리 분 (일 중, 000#)
@@ -522,11 +519,7 @@ class Datwo extends Date {
   stamp(type) {
     switch (type) {
       case 'log': {
-        return (
-          '\x1b[0m\x1b[36m' +
-          new Date().format('YYYY-MM-DD hh:mm:ss') +
-          '\x1b[0m'
-        );
+        return '\x1b[0m\x1b[36m' + new Date().format('YYYY-MM-DD hh:mm:ss') + '\x1b[0m';
       }
       case 'logm': {
         return '[' + new Date().format('YYYY-MM-DD hh:mm:ss.CCC') + ']: ';

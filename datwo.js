@@ -85,8 +85,8 @@ class Datwo extends Date {
     format = format.replace(/DDD/g, DDD);
     format = format.replace(/DD/g, DD);
     format = format.replace(/D/g, D);
-    format = format.replace(/hhm/g, hhm);
-    format = format.replace(/hm/g, hm);
+    format = format.replace(/hhhh/g, hhm);
+    format = format.replace(/hhh/g, hm);
     format = format.replace(/hh/g, hh);
     format = format.replace(/h/g, h);
     format = format.replace(/mmmm/g, mmmm);
