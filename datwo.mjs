@@ -138,7 +138,7 @@ class Datwo extends Date {
       options.lang = 'ko_kr';
     }
     if (!options.detail) {
-      options.detail = 'MINUTE';
+      options.detail = 'HOUR';
     }
 
     switch (options.lang) {
@@ -220,11 +220,11 @@ class Datwo extends Date {
               return N + '개월 전';
             }
           }
-        } else if (BLOCK.DATE <= M) {
+        } else if (BLOCK.DAY <= M) {
           if (options.detail == 'MONTH') {
             return '방금 전';
           }
-          const N = Math.floor(M / BLOCK.DATE);
+          const N = Math.floor(M / BLOCK.DAY);
           switch (N) {
             case 1: {
               return '어제';
@@ -239,10 +239,10 @@ class Datwo extends Date {
               return '나흘 전';
             }
             case 5: {
-              return '닷세 전';
+              return '닷새 전';
             }
             case 6: {
-              return '엿세 전';
+              return '엿새 전';
             }
             case 7: {
               return '7일 전';
@@ -385,11 +385,11 @@ class Datwo extends Date {
               return N + '개월 후';
             }
           }
-        } else if (BLOCK.DATE <= M) {
+        } else if (BLOCK.DAY <= M) {
           if (options.detail == 'MONTH') {
             return '조금 뒤';
           }
-          const N = Math.floor(M / BLOCK.DATE);
+          const N = Math.floor(M / BLOCK.DAY);
           switch (N) {
             case 1: {
               return '내일';
@@ -519,11 +519,11 @@ class Datwo extends Date {
           } else {
             return N + ' months ago';
           }
-        } else if (BLOCK.DATE <= M) {
+        } else if (BLOCK.DAY <= M) {
           if (options.detail == 'MONTH') {
             return 'just before';
           }
-          const N = Math.floor(M / BLOCK.DATE);
+          const N = Math.floor(M / BLOCK.DAY);
           switch (N) {
             case 1: {
               return 'yesterday';
